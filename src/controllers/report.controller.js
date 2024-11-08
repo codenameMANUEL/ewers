@@ -8,7 +8,6 @@ const controller = {
         res.json(reports)
     },
 
-    
     getOneReport: async (req, res) => {
         let {id} = req.params;
         let report = await Report.findOne(id);

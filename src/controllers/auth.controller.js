@@ -13,9 +13,8 @@ const controller = {
         id:user._id,
         full_name:user.full_name,
         email:user.email,
-        phone_number:user.phone_number,
         department:user.department
     })
   },
 };
-export default controller;
+export default controller; 

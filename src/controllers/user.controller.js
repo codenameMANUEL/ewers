@@ -15,6 +15,7 @@ const controller = {
       full_name: user.full_name,
       email: user.email,
       phone_number: user.phone_number,
+      department: user.department
     });
   },
 };
