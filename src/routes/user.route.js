@@ -7,7 +7,9 @@ route.get("/", async (req, res) => {
   res.json("naso");
 });
 
+// route.post("/", user_controller.createUser);
 route.post("/", user_controller.createUser);
+
 
 // route.patch("/:id", async (req, res) => {});
 

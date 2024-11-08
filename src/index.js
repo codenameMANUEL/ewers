@@ -14,6 +14,7 @@ const BASE_URL = "/v1";
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// app.use(`${BASE_URL}/users`, user_route);
 app.use(`${BASE_URL}/users`, user_route);
 app.use(`${BASE_URL}/auth`, auth_route);
 app.use(`${BASE_URL}/reports`, report_route);
