@@ -1,5 +1,5 @@
 
-import Report from "../models/report.model.js";
+import {Report} from "../models/report.model.js";
 
 const controller = {
 
