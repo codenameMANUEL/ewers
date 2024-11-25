@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import user_route from "./routes/user.route.js";
 import auth_route from "./routes/auth.route.js";
 import report_route from "./routes/report.route.js";
+// import user_report_route from "./routes/userReport.route.js"
 
 dotenv.config();
 
@@ -18,6 +19,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(`${BASE_URL}/users`, user_route);
 app.use(`${BASE_URL}/auth`, auth_route);
 app.use(`${BASE_URL}/reports`, report_route);
+
+// app.use(`${BASE_URL}/user-report`, user_report_route)
 
 app.get(`${BASE_URL}/`, (req, res) =>
   res.json({ msg: "Welcome to ewers API" })

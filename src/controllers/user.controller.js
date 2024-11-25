@@ -6,7 +6,7 @@ const controller = {
     let { email } = req.body;
     let user = await User.findOne({ email });
 
-    if (user) return res.json({ msg: "Email already exists", code: 400 });
+    if (user) return res.json({msg: "Email already exists", code: 400 });
     user = User.create(req.body);
     // await user.save();
 

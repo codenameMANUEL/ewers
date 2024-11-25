@@ -10,7 +10,6 @@ route.get("/", async (req, res) => {
 // route.post("/", user_controller.createUser);
 route.post("/", user_controller.createUser);
 
-
 // route.patch("/:id", async (req, res) => {});
 
 // route.put("/:id", async (req, res) => {});
