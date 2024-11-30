@@ -1,9 +1,9 @@
 import { Schema, model } from "mongoose";
 
-const CpsReportSchema = new Schema(
+const ResponsersReportSchema = new Schema(
     {
-        cps_id: { type: String, required: true },
-        cps_fullname: { type: String, required: true },
+        responser_id: { type: String, required: true },
+        responser_fullname: { type: String, required: true },
         user_id: { type: String, required: true },
         image: { type: String },
         user_full_name: { type: String, required: true },
@@ -24,11 +24,11 @@ const CpsReportSchema = new Schema(
         has_it_happened_before: { type: String, require: true },
         source_of_information: { type: String, require: true },
         report_to_responders: { type: String, required: true },
-        cams_comment: { type: String, required:true },
+        cps_comment: { type: String, required:true },
         comment: { type: String, required: true },
       },
       { timestamps: true }
 );
 
-const CpsReport = model("cpsReports", CpsReportSchema);
-export default CpsReport;
+const ResponsersReport = model("respondersReports", ResponsersReportSchema);
+export default ResponsersReport;

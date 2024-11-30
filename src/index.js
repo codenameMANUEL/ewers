@@ -6,6 +6,7 @@ import auth_route from "./routes/auth.route.js";
 import report_route from "./routes/report.route.js";
 import cams_route from "./routes/cams.route.js"
 import cps_route from "./routes/cps.route.js"
+import responsers_route from "./routes/responsers.route.js";
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.use(`${BASE_URL}/reports`, report_route);
 // verification routes
 app.use(`${BASE_URL}/cams`, cams_route);
 app.use(`${BASE_URL}/cps`, cps_route);
+app.use(`${BASE_URL}/responders`, responsers_route);
 // app.use(`${BASE_URL}/user-report`, user_report_route)
 
 app.get(`${BASE_URL}/`, (req, res) =>
