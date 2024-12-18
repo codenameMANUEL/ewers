@@ -26,6 +26,8 @@ const ResponsersReportSchema = new Schema(
         report_to_responders: { type: String, required: true },
         cps_comment: { type: String, required:true },
         comment: { type: String, required: true },
+        cps_id: { type: String, required: true},
+        cps_fullname: { type: String, required: true}
       },
       { timestamps: true }
 );

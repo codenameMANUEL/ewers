@@ -26,6 +26,8 @@ const CpsReportSchema = new Schema(
         report_to_responders: { type: String, required: true },
         cams_comment: { type: String, required:true },
         comment: { type: String, required: true },
+        cams_id: { type: String, required: true },
+        cams_fullname: { type: String, required: true }
       },
       { timestamps: true }
 );

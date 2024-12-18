@@ -41,11 +41,27 @@ const controller = {
             if (report) {
                 return res.json({ message: "Report deleted" });
             }
-            res.status(404).json({ message: "Report does not exist" });
+            res.status(404).json({ message: "Report does not exist testing" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
     },
+    updateReport: async (req, res) => {
+        try {
+            const { id } = req.params;
+            const updatedReport = await CamsReport.findOneAndUpdate(
+                { _id: id },
+                req.body,
+                { new: true } // This option returns the updated document
+            );
+            if (!updatedReport) {
+                return res.status(404).json({ message: "Report does not exist" });
+            }
+            res.json(updatedReport);
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    }
 };
 
 export default controller;
