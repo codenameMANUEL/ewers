@@ -16,6 +16,7 @@ const CpsReportSchema = new Schema(
         description: { type: String, required: true },
         numbers_kiilled: { type: String, required: true },
         numbers_injured: { type: String, required: true },
+        numbers_displaced: { type: String, required: true },
         numbers_of_women_affected: { type: String, required: true },
         number_of_children_affected: { type: String, required: true },
         number_of_cattles_affected: { type: String, require: true },
